@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando a brincadeira</title>
+    <style>
+        body {
+            background: blueviolet;
+            color: white;
+            font: normal 15pt Arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudo de DOM</h1>
+    <p name = "olakk">Aqui vai o <strong>resultado<strong></p>
+    <div id="msg">Cliqu e aqui</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim: </br> ' + p1.innerText)
+        corpo.style.background = 'black'
+        p1.style.color = 'blue'
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = "Estou aguardando"
+        var f = window.document.getElementsByName('olakk')
+        d.innerText = "Selecionou por nome e"
+
+        var selec = window.document.querySelector('div#msg')
+        selec.style.background = 'pink'
+        
+</script>
+</body>
+</html>

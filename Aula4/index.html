@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt(`Qual é o seu nome?`)         // negrito e quebra de linha
+        document.write(`Seu nome <strong>tem ${nome.length} letras</strong><br/>`)
+        document.write('tchau')
+
+        // comando pica de moedas monetarias dinheirosas:
+        var salário = 1580
+        // se der print vai sair: R$: 1580,00 BONITINHO fera
+        salário.toLocaleString(`pt-BR`, {style: 'currencyLLL: BRL'})
+    </script>
+</body>
+</html>

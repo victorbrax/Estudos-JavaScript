@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Programa em JS</title>
+    <style>
+        body {
+            background-color: rgb(136, 191, 191);
+            color: brown;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: yellow
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, world!</h1>
+    <p>Este é o início.</p>
+
+    <script>
+        // A característica do comando prompt é receber STRINGS
+     // Para isso precisamos fazer uma conversão de tipo da var
+        var n1 = Number.parseFloat(window.prompt("Digite um número;")) // Aqui vc define o tipo da entrada
+     var n2 = Number(window.prompt("Digite outro número;")) // Aqui vc manda o JS se virar
+     var s = n1 + n2
+                                        // Convertendo o resultado pra String
+     window.alert("A soma dos valores é: "+ String(s))
+        // template string, formatando sem ter que concatenar os objetos
+     window.alert(`A soma dos valores de ${n1} e ${n2} é igual a ${s}, obrigado por usar`)
+        // perceba que as crases substituiram as aspas
+
+        // outras coisas legais:
+
+        /* 
+        s.lenght
+        s.toUpperCase
+        s.toLowerCase
+        */
+    </script>
+
+</body> 
+</html>

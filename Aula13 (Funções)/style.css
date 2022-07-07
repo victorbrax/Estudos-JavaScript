@@ -1,0 +1,28 @@
+body{
+    background: rgb(253, 57, 57);
+}
+
+header{
+    font: normal 18pt Arial;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+section{
+    background: rgb(255, 255, 255);
+    padding: 18px;
+    border-radius: 20px;
+    width: 50vh;
+    margin: auto;
+
+}
+
+footer{
+    font: normal 13pt Arial;
+    text-align: center;
+    color: aliceblue;
+}
+
+select#flista{ 
+    width: 23vh;
+}

@@ -1,0 +1,19 @@
+// funcao recursiva e quando ela chama ela msm
+function fatorial(n){
+    if(n==1){
+        return 1
+    }
+    else{
+        return n*fatorial(n-1)  // RECURSIVIDADE (é meio complexo msm)
+    }
+}
+
+console.log(fatorial(5))
+
+/*
+5! = 5x4x3x2x1
+5! = 5x4!
+
+n! = n x (n-1)!
+1! = 1
+*/
